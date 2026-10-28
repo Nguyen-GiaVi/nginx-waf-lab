@@ -2,7 +2,7 @@
 
 **Họ tên sinh viên:** Nguyễn Gia Vĩ  
 **Mã số sinh viên:** 24021673  
-**Môn học:** Kiến trúc phần mềm – Thiết kế cho bảo mật
+**Môn học:** Kiến trúc phần mềm
 
 ## 1. Mục tiêu
 
@@ -151,8 +151,6 @@ Kết quả ghi lại cho thấy đăng nhập thành công và ứng dụng có
 ### Kết luận
 
 Thử nghiệm minh họa vai trò của WAF như một lớp bảo vệ đứng trước ứng dụng web. Khi truy cập trực tiếp vào Juice Shop, payload SQL Injection trong phép thử đã khai thác được hành vi dễ bị tổn thương của ứng dụng. Khi gửi cùng payload qua cổng WAF, ModSecurity/OWASP CRS phát hiện request bằng luật `942100`; luật `949110` đánh giá tổng điểm vi phạm đạt ngưỡng và request nhận phản hồi `403 Forbidden`. Một lần đăng nhập hợp lệ qua WAF cũng được ghi lại để kiểm tra rằng WAF không đơn thuần chặn mọi request.
-
-Kết quả này phản ánh hành vi trong môi trường lab và không có nghĩa WAF có thể phát hiện hoặc ngăn chặn tất cả kiểu tấn công. Cấu hình và luật WAF cần được kiểm thử, giám sát và điều chỉnh phù hợp khi sử dụng trong hệ thống thực tế.
 
 ## 9. Cấu trúc thư mục
 
